@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f7ccc355ca7f6a12bbdb009b3b2d07ba {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f7ccc355ca7f6a12bbdb009b3b2d07ba" ></div>
+        
+</body>
+<script>    
+    
+            var map_f7ccc355ca7f6a12bbdb009b3b2d07ba = L.map(
+                "map_f7ccc355ca7f6a12bbdb009b3b2d07ba",
+                {
+                    center: [48.382221, -89.246109],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_f7ccc355ca7f6a12bbdb009b3b2d07ba);
+
+            
+
+        
+    
+            var tile_layer_40308c8e242e7d2b083ba3c263bc9e11 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f7ccc355ca7f6a12bbdb009b3b2d07ba);
+        
+    
+            var marker_9334cd8e5752af1982e8b4b1770cc68e = L.marker(
+                [48.3824579324574, -89.2457959335298],
+                {}
+            ).addTo(map_f7ccc355ca7f6a12bbdb009b3b2d07ba);
+        
+    
+            var icon_3dc9252342bd963f4f07bef07df3b939 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_9334cd8e5752af1982e8b4b1770cc68e.setIcon(icon_3dc9252342bd963f4f07bef07df3b939);
+        
+    
+        var popup_b78df9a2f4a80eb7afdee08bd0712c09 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_2690387a63ddf876ae63601b2b515fe1 = $(`<div id="html_2690387a63ddf876ae63601b2b515fe1" style="width: 100.0%; height: 100.0%;">City Hall Terminal</div>`)[0];
+            popup_b78df9a2f4a80eb7afdee08bd0712c09.setContent(html_2690387a63ddf876ae63601b2b515fe1);
+        
+
+        marker_9334cd8e5752af1982e8b4b1770cc68e.bindPopup(popup_b78df9a2f4a80eb7afdee08bd0712c09)
+        ;
+
+        
+    
+    
+            marker_9334cd8e5752af1982e8b4b1770cc68e.bindTooltip(
+                `<div>
+                     1019
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_1449346a847d77a9f4100a7e0f1764ac = L.marker(
+                [48.3651579357684, -89.2781599704177],
+                {}
+            ).addTo(map_f7ccc355ca7f6a12bbdb009b3b2d07ba);
+        
+    
+            var icon_da2c12ad52742b6159a24788dba3d50a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_1449346a847d77a9f4100a7e0f1764ac.setIcon(icon_da2c12ad52742b6159a24788dba3d50a);
+        
+    
+        var popup_16882c5a865c2143131073ba7d203513 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_aeb609b97a8e003b9f12d472b74e2faa = $(`<div id="html_aeb609b97a8e003b9f12d472b74e2faa" style="width: 100.0%; height: 100.0%;">Frederica & Edward</div>`)[0];
+            popup_16882c5a865c2143131073ba7d203513.setContent(html_aeb609b97a8e003b9f12d472b74e2faa);
+        
+
+        marker_1449346a847d77a9f4100a7e0f1764ac.bindPopup(popup_16882c5a865c2143131073ba7d203513)
+        ;
+
+        
+    
+    
+            marker_1449346a847d77a9f4100a7e0f1764ac.bindTooltip(
+                `<div>
+                     1042
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_fc7b049f49ea77b0c50d2a3387dc0371 = L.marker(
+                [48.435786953196, -89.2170939501376],
+                {}
+            ).addTo(map_f7ccc355ca7f6a12bbdb009b3b2d07ba);
+        
+    
+            var icon_72525d1e2885fb42386d8a31e8fad1f7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_fc7b049f49ea77b0c50d2a3387dc0371.setIcon(icon_72525d1e2885fb42386d8a31e8fad1f7);
+        
+    
+        var popup_61f17e4776ccbd85408efab04831fa45 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_e3a16b2af64b2e21a6dd1854d5bfe174 = $(`<div id="html_e3a16b2af64b2e21a6dd1854d5bfe174" style="width: 100.0%; height: 100.0%;">Waterfront Terminal</div>`)[0];
+            popup_61f17e4776ccbd85408efab04831fa45.setContent(html_e3a16b2af64b2e21a6dd1854d5bfe174);
+        
+
+        marker_fc7b049f49ea77b0c50d2a3387dc0371.bindPopup(popup_61f17e4776ccbd85408efab04831fa45)
+        ;
+
+        
+    
+    
+            marker_fc7b049f49ea77b0c50d2a3387dc0371.bindTooltip(
+                `<div>
+                     1121
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

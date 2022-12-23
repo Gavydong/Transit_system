@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2baa0d47364b9ba857e40033d9bdb727 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_2baa0d47364b9ba857e40033d9bdb727" ></div>
+        
+</body>
+<script>    
+    
+            var map_2baa0d47364b9ba857e40033d9bdb727 = L.map(
+                "map_2baa0d47364b9ba857e40033d9bdb727",
+                {
+                    center: [48.382221, -89.246109],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+            L.control.scale().addTo(map_2baa0d47364b9ba857e40033d9bdb727);
+
+            
+
+        
+    
+            var tile_layer_6f6e2eddebf08e6dab53d349b7cf66e2 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_2baa0d47364b9ba857e40033d9bdb727);
+        
+    
+            var marker_7c86cdf4692b341ce01b2080a0298e2f = L.marker(
+                [48.3651699218899, -89.2857279907913],
+                {}
+            ).addTo(map_2baa0d47364b9ba857e40033d9bdb727);
+        
+    
+            var icon_0e2b66bc2c2d8be989d5b644b2e4b072 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_7c86cdf4692b341ce01b2080a0298e2f.setIcon(icon_0e2b66bc2c2d8be989d5b644b2e4b072);
+        
+    
+        var popup_bc22003962942d5acb8ba819c8e0d0e2 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_047fc14021b4bee85f62ad9e58ef9f61 = $(`<div id="html_047fc14021b4bee85f62ad9e58ef9f61" style="width: 100.0%; height: 100.0%;">Frederica & Heath</div>`)[0];
+            popup_bc22003962942d5acb8ba819c8e0d0e2.setContent(html_047fc14021b4bee85f62ad9e58ef9f61);
+        
+
+        marker_7c86cdf4692b341ce01b2080a0298e2f.bindPopup(popup_bc22003962942d5acb8ba819c8e0d0e2)
+        ;
+
+        
+    
+    
+            marker_7c86cdf4692b341ce01b2080a0298e2f.bindTooltip(
+                `<div>
+                     Frederica & Heath
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_f44e0829c809b8ffab31040135356be7 = L.marker(
+                [48.4526289626956, -89.1992949787528],
+                {}
+            ).addTo(map_2baa0d47364b9ba857e40033d9bdb727);
+        
+    
+            var icon_f648e1755843888da5f1914d81911cd8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_f44e0829c809b8ffab31040135356be7.setIcon(icon_f648e1755843888da5f1914d81911cd8);
+        
+    
+        var popup_dac3f07fb965082b568ad87ca9a23ea6 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_f5b87127bdef1d9f79c748735cfe820d = $(`<div id="html_f5b87127bdef1d9f79c748735cfe820d" style="width: 100.0%; height: 100.0%;">MacDougall & Algoma</div>`)[0];
+            popup_dac3f07fb965082b568ad87ca9a23ea6.setContent(html_f5b87127bdef1d9f79c748735cfe820d);
+        
+
+        marker_f44e0829c809b8ffab31040135356be7.bindPopup(popup_dac3f07fb965082b568ad87ca9a23ea6)
+        ;
+
+        
+    
+    
+            marker_f44e0829c809b8ffab31040135356be7.bindTooltip(
+                `<div>
+                     MacDougall & Algoma
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e4ac2d4a35f342bdd1cb2922aacf0c0c = L.marker(
+                [48.4202419593931, -89.2387539613993],
+                {}
+            ).addTo(map_2baa0d47364b9ba857e40033d9bdb727);
+        
+    
+            var icon_e5b27bf394620fa3e0efce22058d3347 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bolt", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_e4ac2d4a35f342bdd1cb2922aacf0c0c.setIcon(icon_e5b27bf394620fa3e0efce22058d3347);
+        
+    
+        var popup_85750fa3aa0198016cb4e0d7e050f76d = L.popup({"maxWidth": "100%"});
+
+        
+            var html_50b0c6c0ad54ddcc1e07614918fe0938 = $(`<div id="html_50b0c6c0ad54ddcc1e07614918fe0938" style="width: 100.0%; height: 100.0%;">Memorial & First</div>`)[0];
+            popup_85750fa3aa0198016cb4e0d7e050f76d.setContent(html_50b0c6c0ad54ddcc1e07614918fe0938);
+        
+
+        marker_e4ac2d4a35f342bdd1cb2922aacf0c0c.bindPopup(popup_85750fa3aa0198016cb4e0d7e050f76d)
+        ;
+
+        
+    
+    
+            marker_e4ac2d4a35f342bdd1cb2922aacf0c0c.bindTooltip(
+                `<div>
+                     Memorial & First
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>

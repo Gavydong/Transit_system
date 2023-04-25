@@ -1,8 +1,8 @@
 import folium
 import dash
 import dash_bootstrap_components as dbc
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output, State
 
 import plotly.express as px
@@ -174,22 +174,20 @@ content_fourth_row = dbc.Row(
 
 content = html.Div(
     [
-        html.H2('Thunder bay Bus Route Map', style=TEXT_STYLE),
+        html.H2('Thunder Bay Bus Route Map', style=TEXT_STYLE),
         html.Hr(),
-        html.P('Bus Route', style={
-            'textAlign': 'center'
-        }),
         dcc.Checklist(
             id='my_checklist',  # used to identify component in callback
             options=[
                 {'label': html.Div(
-                    [total_route[x]], style={'color': route_color[int(routes[routes["route_id"] == total_route[x]].index.values)], 'font-size': 50}
+                    [total_route[x]], style={'color': route_color[int(routes[routes["route_id"] == total_route[x]].index.values)],'align-items': 'center',  'font-size': 45}
                 ),
                     'value': total_route[x], 'disabled': False}
                 for x in range(17)
             ], labelStyle=dict(display='inline-block'),
-            value=total_route,
-            inputStyle={"margin-right": "80px"}
+            value=["1","2","9"],
+            inputStyle={"margin-right": "70px"},
+
 
         ),
         html.Br(),

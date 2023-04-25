@@ -1,8 +1,8 @@
 import folium
 import dash
 import dash_bootstrap_components as dbc
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output, State
 
 import plotly.express as px
@@ -48,13 +48,13 @@ CARD_TEXT_STYLE = {
 
 controls = dbc.FormGroup(
     [
-        html.P('Selected Charging Station', style={
+        html.P('Selected Charging Stations', style={
             'textAlign': 'center'
         }),
         dcc.Dropdown(
             id='dropdown',
             options=stops['stop_id'],
-            value=[1019,1121],  # default value
+            value=[1019,1121,1042],  # default value
             multi=True
         ),
         html.Br(),
@@ -172,10 +172,10 @@ content_fourth_row = dbc.Row(
 
 content = html.Div(
     [
-        html.H2('Thunder bay Map with charging station', style=TEXT_STYLE),
+        html.H2('Charging Stations', style=TEXT_STYLE),
         html.Hr(),
         html.Iframe(id="map", srcDoc= open("map_with_selected_bus_stations.html","r").read(),width="100%",height="800"),
-        html.H2('Thunder bay Map with all bus stops', style=TEXT_STYLE),
+        html.H2('Bus Stops Id', style=TEXT_STYLE),
         html.Hr(),
         html.Iframe(id="map_2", srcDoc= open("map_with_all_bus_label.html","r").read(),width="100%",height="800"),
     ],

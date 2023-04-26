@@ -1,0 +1,63 @@
+
+{% load static %}
+<div> 
+
+
+     <div>
+    
+            <div id="dropdown_list">
+                <button id="dropdown_button" 
+                    onclick="show_list_bus()">
+                    select EV bus
+                </button>
+      
+                <div id="buses_id" class="buses">
+                    <li id="BYD K9"><a >BYD K9</a></li>
+                    <li id="Volvo 7900"><a >Volvo 7900</a></li>
+                    <li id="Proterra ZX5"><a >Proterra ZX5</a></li>
+                </div>
+            </div>
+    
+        
+            <div class="split left">
+              
+            <ul>
+            <li>
+                <label class="title_input">Battery Capacity</label>
+                <input class = "my_input-d" type="text" readonly>
+            </li>
+             <li>
+                <label class="title_input">Max Passengers</label>
+                <input class = "my_input-d" type="text" readonly>
+            </li>
+             <li>
+                <label class="title_input">Max speed</label>
+                <input class = "my_input-d" type="text" readonly>
+            </li>
+             <li>
+                <label class="title_input">Weight</label>
+                <input class = "my_input-d" type="text" readonly>
+            </li>
+            <li>
+                <label class="title_input">Time to charge</label>
+                <input class = "my_input-d" type="text" readonly>
+            </li>
+            
+           </ul>
+    
+            </div>
+    
+          
+    
+          </div>
+    
+         
+        
+          <div class="split right">
+            <img id="Bus-icon" style="width:300px;height:250px;"src= "{% static 'BusDashBoard/byd-k9.png' %} " >
+            
+            </div>
+          </div> 
+
+          <script type="text/javascript" src="{% static 'BusDashBoard/Electrical.js'%}"></script> 
+        </div>
